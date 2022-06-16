@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Image Editor</title>
+  </head>
+  <body>
+    <div class="tool_container">
+      <input type="file" id="inputFile" />
+      <div class="tool">
+        <label for="brightness">Brightness</label>
+        <input type="range" min="0" max="200" id="brightness" value="100" />
+      </div>
+      <div class="tool">
+        <label for="blur">Blur</label>
+        <input type="range" min="0" max="20" id="blur" value="0" />
+      </div>
+      <div class="tool">
+        <label for="saturation">Saturation</label>
+        <input type="range" min="0" max="200" id="saturation" value="100" />
+      </div>
+      <div class="tool">
+        <label for="grayScale">Gray Scale</label>
+        <input type="range" min="0" max="100" id="grayScale" value="0" />
+      </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="index.js"></script>
+  </body>
+</html>
